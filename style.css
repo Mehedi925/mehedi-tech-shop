@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -8,16 +8,35 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    ;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/* common style */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.primary-button {
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #F27300;
+    padding: 10px 23px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.fas {
+    padding-left: 5px;
 }
 
 /*======================= 
@@ -61,7 +80,6 @@ html {
 .banner-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
 }
 
@@ -74,22 +92,6 @@ html {
     font-weight: 700;
     color: #3A3A3A;
 }
-
-.banner-button {
-    color: #FFFFFF;
-    font-size: 18px;
-    background-color: #E02C6D;
-    padding: 10px 23px;
-    margin-top: 20px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-}
-
-.fas {
-    padding-left: 5px;
-}
-
 
 .banner-photo {
     display: flex;
@@ -109,9 +111,10 @@ html {
     company logo style start
 ============================== */
 .company-logo {
-    margin-top: 50px;
-    border-top: 1px solid #3A3A3A;
-    border-bottom: 1px solid #3A3A3A;
+    margin-top: 70px;
+    border-top: 1px solid #f08017;
+    border-bottom: 1px solid #f08017;
+
 }
 
 .company-logo ul {
@@ -125,19 +128,121 @@ html {
 }
 
 .company-logo ul li a img {
-    padding: 10px 15px;
+    padding: 15px 15px;
 }
 
 /*=================================
     popular products style start
 =================================== */
+
 .popular-products {
     margin-top: 100px;
+}
+
+.products-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 94px;
+}
+
+.popular-products>h2 {
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product {
+    box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+    padding: 15px;
 
 }
 
-.popular-products h2 {
-    text-align: center;
-    margin-bottom: 60px;
+.product-photo {
+    width: 100%;
+    height: 274px;
+}
 
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.product-info .product-title {
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.product-info .product-price {
+    color: #3A3A3A;
+    font-weight: 400;
+}
+
+.product-rating>i {
+    color: #FB8200;
+    font-size: 16px;
+}
+
+.product-info p {
+    color: #3A3A3A;
+
+}
+
+.product-rating .rating-num {
+    padding-right: 50px;
+}
+
+.seemore-btn {
+    float: right;
+    color: #F27300;
+    font-size: 18px;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #FFFFFF;
+    font-weight: 400;
+}
+
+/*=================================
+    contact style start
+=================================== */
+
+.contact-fullpart {
+    margin-bottom: 50px;
+}
+
+.contact {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 50px;
+
+}
+
+.contact-photo img {
+    width: 100%;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form .text-box {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #F27300;
 }
