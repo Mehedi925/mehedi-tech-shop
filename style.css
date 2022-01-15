@@ -58,18 +58,21 @@ html {
     column-gap: 30px;
 }
 
-.banner-description {
+.banner-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    column-gap: 20px;
+}
 
+.banner-description {
+    color: #3A3A3A;
 }
 
 .banner-title {
-    font-size: 40px;
+    font-size: 52px;
     font-weight: 700;
+    color: #3A3A3A;
 }
 
 .banner-button {
@@ -77,6 +80,7 @@ html {
     font-size: 18px;
     background-color: #E02C6D;
     padding: 10px 23px;
+    margin-top: 20px;
     border-radius: 50px;
     border: none;
 }
